@@ -1,15 +1,16 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: "关于我"
+description: "information about me"
+group: navigation
+comments: false
 ---
+{% include JB/setup %}
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+## 个人简介
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+多年混迹于互联网，常用网名`liberize`。
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+崇尚自由，热爱分享，为突破束缚、创造可能而学习编程，接触过不少东西，多而未专。
+
+希望与有相同爱好的人们多多交流，一起用代码改变世界！
