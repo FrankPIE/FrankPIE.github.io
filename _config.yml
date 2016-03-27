@@ -22,7 +22,7 @@ author :
   email : frankpei1992@gmail.com
   github : FrankPIE
   twitter : #liberize
-  weibo : 清新正直裴草莓
+  weibo : madstrawberry
   v2ex : #liberize
   googleplus : 106536571806195829381
   feedburner : #feedname
@@ -130,7 +130,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false #direct
+    provider : direct
 
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
