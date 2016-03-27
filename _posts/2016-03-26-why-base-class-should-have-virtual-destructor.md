@@ -3,7 +3,7 @@ layout: post
 title: "基类为什么要定义虚析构函数"
 keywords: ["c++", "100 way to memory leak"]
 description: "为什么C++中不给基类定义vritual析构函数有可能造成内存泄漏"
-category: "健康C++小贴士"
+category: "Cpp Healthy Tips"
 tags: ["C/C++", "内存泄漏"]
 ---
 {% include JB/setup %}
