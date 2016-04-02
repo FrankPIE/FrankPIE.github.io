@@ -4,7 +4,7 @@ title: "3D图形管线之旅：索引(译)"
 keywords: ["GPU", "3D管线", "译"]
 description: "A trip through the Graphics Pipeline 2011 的翻译"
 category: "Unreliable Translate"
-tags: ["C/C++", "内存泄漏"]
+tags: ["GPU", "3D管线", "图形学", "硬件底层"]
 ---
 {% include JB/setup %}
 
