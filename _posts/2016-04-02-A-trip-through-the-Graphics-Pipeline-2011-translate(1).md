@@ -3,7 +3,7 @@ layout: post
 title: "(译)3D管线之旅：软件架构"
 keywords: ["GPU", "3D管线", "译"]
 description: "A trip through the Graphics Pipeline 2011 的翻译"
-category: "Unreliable Translate"
+category: "Unreliable-Translate"
 tags: ["GPU", "3D管线", "图形学", "硬件底层"]
 ---
 {% include JB/setup %}
