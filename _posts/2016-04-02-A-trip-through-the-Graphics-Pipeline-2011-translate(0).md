@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "3D图形管线之旅：索引(译)"
+title: "(译)3D管线之旅：索引"
 keywords: ["GPU", "3D管线", "译"]
 description: "A trip through the Graphics Pipeline 2011 的翻译"
 category: "Unreliable Translate"
@@ -34,7 +34,7 @@ Some readers have commented that this is a really low-level description of the g
 
 -------------------------------------------------
 
-* Part 1: Introduction：the Software stack.
+* [Part 1: Introduction：the Software stack](http://madstrawberry.me/unreliable translate/A-trip-through-the-Graphics-Pipeline-2011-translate(1).html)
 
 * Part 2: GPU memory architecture and the Command Processor.
 
