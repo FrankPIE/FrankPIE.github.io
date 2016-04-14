@@ -36,7 +36,7 @@ Some readers have commented that this is a really low-level description of the g
 
 * [Part 1: Introduction：the Software stack](http://madstrawberry.me/unreliable-translate/A-trip-through-the-Graphics-Pipeline-2011-translate(1).html)
 
-* Part 2: GPU memory architecture and the Command Processor.
+* [Part 2: GPU memory architecture and the Command Processor.](http://madstrawberry.me/unreliable-translate/A-trip-through-the-Graphics-Pipeline-2011-translate(2).html)
 
 * Part 3: 3D pipeline overview, vertex processing.
 
