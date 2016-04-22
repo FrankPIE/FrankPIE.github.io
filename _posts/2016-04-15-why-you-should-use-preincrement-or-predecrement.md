@@ -19,26 +19,29 @@ tags: ["C/C++"]
 class Foo 
 {
 public:
-	//preincrement
-	void operator++()
-	{
-		foo_ += 1;
-	}
+    //preincrement
+    Foo& operator++()
+    {
+	++foo_;
+	return *this;
+    }
 
-	//postincrement
-	Foo operator++(int)
-	{
-		Foo f(*this);
+    //postincrement
+    Foo operator++(int)
+    {
+	Foo f(*this);
 
-		foo_ += 1;
+	++(*this);
 
-		return f;
-	}
+	return f;
+    }
 
 private:
-	int foo_;
+    int foo_;
 }
 ```
+
+### 更新：因为也很久没有写过这个重载了，前置++运算符实现的有问题，后置++运算符也有点问题，现在已经改正。
 
 以上代码我教科书般的重载了Class Foo的前置++和后置++运算符（--运算符也是同样的做法），从代码上答案已经显而易见了，不懂代码的人从代码量上就能看出问题所在——大规模使用后置运算符简直就是性能杀手。但是其实我觉得我基本不能依靠这么一两次的拷贝或者构造的开销就轻易的说服你改变代码使用习惯，所以我将给你讲述为什么C++中更加倾向于使用前置而非后置。
 
