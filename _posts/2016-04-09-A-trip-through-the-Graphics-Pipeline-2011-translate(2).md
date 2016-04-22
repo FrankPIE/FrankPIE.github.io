@@ -10,6 +10,7 @@ tags: ["GPU", "3D管线", "图形学", "硬件底层"]
 
 [原文：A trip through the Graphics Pipeline 2011（需要翻墙）](https://fgiesen.wordpress.com/2011/07/02/a-trip-through-the-graphics-pipeline-2011-part-2/)
 --------------------------------------------
+
 ## 中文
 
 ### 停一下
@@ -102,6 +103,7 @@ GPU在缓存(Cache)方面超级慢，一次cache miss相对于一块Nehalem架�
 未完待续...
 
 -------------------------------
+
 ## English
 
 ### Not so fast.
