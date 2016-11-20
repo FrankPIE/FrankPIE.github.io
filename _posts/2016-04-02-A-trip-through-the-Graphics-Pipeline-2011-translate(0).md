@@ -43,7 +43,7 @@ Some readers have commented that this is a really low-level description of the g
 
 * [Part 3: 3D pipeline overview, vertex processing](http://madstrawberry.me/unreliable-translate/A-trip-through-the-Graphics-Pipeline-2011-translate(3).html)
 
-* Part 4: Texture samplers.
+* [Part 4: Texture samplers](http://madstrawberry.me/unreliable-translate/A-trip-through-the-Graphics-Pipeline-2011-translate(4).html)
 
 * Part 5: Primitive Assembly, Clip/Cull, Projection, and Viewport transform.
 

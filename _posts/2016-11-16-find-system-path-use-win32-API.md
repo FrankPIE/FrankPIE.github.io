@@ -4,7 +4,7 @@ title: "使用Win32 API查找系统路径"
 keywords: ["C/C++", "OS", "Win32"]
 description: "介绍一种查找Windows操作系统基本路径的办法"
 category: "Something-About-OS"
-tags: ["windows操作系统", "系统路径", “Win32 API”]
+tags: ["windows操作系统", "系统路径", "Win32"]
 ---
 {% include JB/setup %}
 
