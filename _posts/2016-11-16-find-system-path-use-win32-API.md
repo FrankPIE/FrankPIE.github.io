@@ -19,7 +19,7 @@ tags: ["windows操作系统", "系统路径", "Win32"]
 ```cpp
 
 //查找系统ProgramData目录
-PWSTR *path_str = nullptr
+PWSTR path_str = nullptr;
 
 HRESULT hr ＝ SHGetKnownFolderPath(FOLDERID_ProgramData, 0, nullptr, &path_str);
 
