@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "(译)3D管线之旅：3D管线概述，顶点处理"
+short_title: "(译)3D管线之旅3"
 keywords: ["GPU", "3D管线", "译"]
 description: "A trip through the Graphics Pipeline 2011 的翻译"
 category: "Unreliable-Translate"

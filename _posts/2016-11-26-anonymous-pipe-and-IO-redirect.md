@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "匿名管道通信与IO重定向"
+short_title: "匿名管道通信与IO重定向"
 keywords: ["C/C++", "OS", "Win32"]
 description: "介绍如何通过匿名管道实现子进程输出重定向"
 category: "Something-About-OS"

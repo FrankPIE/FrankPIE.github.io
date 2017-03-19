@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "为什么更倾向使用前置++/--"
+short_title: "为什么更倾向使用前置++/--"
 keywords: ["c++"]
 description: "c++为什么更倾向于使用前置递增/递减运算符"
 category: "Cpp-Healthy-Tips"
