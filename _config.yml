@@ -1,154 +1,118 @@
-# This is the default format. 
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:title.html
+# Base blog settings
+baseurl                      : "/dactl/" # the subpath of your site,                         # e.g. /blog/
+                              # set to '' in case of hosting on GitHub
+url                          : "" # the base hostname & protocol for your site
+                                  # `http://<username>.github.io` - for GitHub
 
-safe: false
-gems: ["jekyll-paginate"]
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-paginate: 10
-encoding: utf-8
+blog:
+  title                      : dactl
+  description                  : >
+                               this should contain a proper description
+
+# Layout configuration
+  logo_path                  : "assets/img/dactl.svg" # path to logo file
+  search_path                : # "yourgitusername.github.io"
+                               # needed for searchbox in archive page
+  hero_layout                : true # turn on hero layout for blog and posts
+  hero_placeholder           : "assets/img/generic_hero.jpg" # placeholder for hero image
+  excerpts                   : true # show excerpts instead of full post content on blog page
+  inline_footnotes           : true # enable/disable barefoot inline footnotes
+  titles_only                : false # show post titles only on main blog page
+
+# Fonts
+  font                       : '"Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
+  load_google_fonts          : 'Rubik:400,400italic,700,700italic'
+
+
+# Author info
+author:
+  fullname                  : Your Name
+  rss                       : true # generate RSS feed and show it's icon in header
+  mail                      : your@email.com # change to your e-mail address
+  twitter                   : twitter-user-name
+  github                    : github-user-name
+  youtube                   : youtube-user-name
+  stackoverflow             : stackoverflow-user-name
+  disqus                    : dactl # your disqus site name
+  google_analytics          : # 'UA-XXXXXXXX-X'
+  photo                     : "uploads/me2.png"
+  photo2x                   : "uploads/me.png"
+
+
+
+## !!
+## Advanced blog settings
+## You should not change anything here unless you know what you are doing
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Permalinks
+permalink                    : posts/:slug
+
+# Posts
+excerpt_separator            : <!–-break-–>
+
+# Pagination
+paginate                     : 5
+paginate_path                : '/page-:num/'
+
+# Tags
+collections:
+  my_tags:
+    output: true
+    permalink: /tag/:slug/
+defaults:
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: blog-by-tag
+
+# Handling Reading
+exclude                    : ["README.md", "README.html"]
+
+# https://github.com/jekyll/jekyll/issues/4619
+# Markdown and highlighter settings
+markdown: kramdown
+# !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
+# Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
 highlighter: rouge
 
-markdown: kramdown
+# More › http://kramdown.gettalong.org/quickref.html
+# Options › http://kramdown.gettalong.org/options.html
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  input:          GFM
+  # https://github.com/jekyll/jekyll/pull/4090
+  syntax_highlighter: rouge
 
-#markdown: redcarpet
-#redcarpet:
-#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
+  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  # span, block element options fall back to global
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    # css_class: 'highlight'
+    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
-title : 疯草莓的幻想
-tagline: #Free as the wind.
-author :
-  name : MadStrawberry
-  email : frankpei1992@gmail.com
-  github : FrankPIE
-  twitter : #liberize
-  weibo : madstrawberry
-  v2ex : #liberize
-  googleplus : 106536571806195829381
-  feedburner : #feedname
+# Sass settings
+sass:
+  sass_dir                : _sass
+  style                   : compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.io, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
-production_url : http://madstrawberry.me
-cdn_url : #http://liberize.u.qiniudn.com
-
-# All Jekyll-Bootstrap specific configurations are namespaced into this hash
-#
-JB :
-  version : 0.3.0
-
-  # All links will be namespaced by BASE_PATH if defined.
-  # Links in your website should always be prefixed with {{BASE_PATH}}
-  # however this value will be dynamically changed depending on your deployment situation.
-  #
-  # CNAME (http://yourcustomdomain.com)
-  #   DO NOT SET BASE_PATH 
-  #   (urls will be prefixed with "/" and work relatively)
-  #
-  # GitHub Pages (http://username.github.io)
-  #   DO NOT SET BASE_PATH 
-  #   (urls will be prefixed with "/" and work relatively)
-  #
-  # GitHub Project Pages (http://username.github.io/project-name)
-  #
-  #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
-  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
-  #
-  # CAUTION:
-  #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
-  #   - Only the following values are falsy: ["", null, false]
-  #   - When setting BASE_PATH it must be a valid url.
-  #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : false
-
-  # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
-  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
-  #
-  # Override this by defining an absolute path to assets here.
-  # ex: 
-  #   http://s3.amazonaws.com/yoursite/themes/watermelon
-  #   /assets
-  #
-  ASSET_PATH : false
-  IMAGE_PATH : false
-
-  # These paths are to the main pages Jekyll-Bootstrap ships with.
-  # Some JB helpers refer to these paths; change them here if needed.
-  #
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
-  messages_path : /messages.html
-  about_path : /about.html
-
-  # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commenting off globally.
-  #
-  comments :
-    provider : disqus
-    duoshuo :
-      short_name : madstrawberry
-    disqus :
-      short_name : MadStrawberry
-    livefyre :
-      site_id : #123
-    intensedebate :
-      account : #123abc
-    facebook :
-      appid : #123
-      num_posts: #5
-      width: #580
-      colorscheme: #light
-
-  # Settings for analytics helper
-  # Set 'provider' to the analytics provider you want to use.
-  # Set 'provider' to false to turn analytics off globally.
-  #        
-  analytics :
-    provider : baidu
-    baidu :
-      tracking_id : 'c687ed00ef7ec1e6647e872ee566c745' 
-    google : 
-      tracking_id : #'UA-41189818-1'
-    getclicky :
-      site_id : 
-    mixpanel :
-      token : #'_MIXPANEL_TOKEN_'
-
-  # Settings for sharing helper. 
-  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
-  # Set 'provider' to the sharing provider you want to use.
-  # Set 'provider' to false to turn sharing off globally.
-  #
-  sharing :
-    provider : direct
-
-  # Settings for all other include helpers can be defined by creating 
-  # a hash with key named for the given helper. ex:
-  #
-  #   pages_list :
-  #     provider : "custom"   
-  #
-  # Setting any helper's provider to 'custom' will bypass the helper code
-  # and include your custom code. Your custom file must be defined at:
-  #   ./_includes/custom/[HELPER]
-  # where [HELPER] is the name of the helper you are overriding.
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings               : all
+  endings                 : all
+  comments                : ["<!-- ", " -->"]
+  blanklines              : true
+  profile                 : false
+  ignore:
+  envs                    : [local]

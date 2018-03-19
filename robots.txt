@@ -1,3 +1,9 @@
 ---
+layout: null
+sitemap:
+  exclude: 'yes'
 ---
-Sitemap: {{ site.production_url }}/sitemap.txt
+User-agent: *
+Disallow:
+
+Sitemap: {{ site.url }}/sitemap.xml
