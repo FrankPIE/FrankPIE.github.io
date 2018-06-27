@@ -1,13 +1,14 @@
 # Base blog settings
-baseurl                      : "/dactl/" # the subpath of your site,                         # e.g. /blog/
+baseurl                      : "" # the subpath of your site,                         # e.g. /blog/
                               # set to '' in case of hosting on GitHub
 url                          : "" # the base hostname & protocol for your site
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : dactl
+  title                      : 疯草莓的幻想
+  en_title                   : Strawberry
   description                  : >
-                               this should contain a proper description
+                               © 2016-2018 
 
 # Layout configuration
   logo_path                  : "assets/img/dactl.svg" # path to logo file
@@ -26,17 +27,17 @@ blog:
 
 # Author info
 author:
-  fullname                  : Your Name
+  fullname                  : MadStrawberry
   rss                       : true # generate RSS feed and show it's icon in header
-  mail                      : your@email.com # change to your e-mail address
-  twitter                   : twitter-user-name
-  github                    : github-user-name
-  youtube                   : youtube-user-name
-  stackoverflow             : stackoverflow-user-name
-  disqus                    : dactl # your disqus site name
+  mail                      : frankpei1992@email.com # change to your e-mail address
+  twitter                   : 
+  github                    : FrankPIE
+  youtube                   : 
+  stackoverflow             : users/4806840/frankpie
+  disqus                    : madstrawberry-space-1 # your disqus site name
   google_analytics          : # 'UA-XXXXXXXX-X'
-  photo                     : "uploads/me2.png"
-  photo2x                   : "uploads/me.png"
+  photo                     : "uploads/me.jpg"
+  photo2x                   : "uploads/me.jpg"
 
 
 
@@ -81,7 +82,7 @@ markdown: kramdown
 # !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
 # Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
 highlighter: rouge
-
+  
 # More › http://kramdown.gettalong.org/quickref.html
 # Options › http://kramdown.gettalong.org/options.html
 kramdown:
@@ -89,17 +90,15 @@ kramdown:
   # https://github.com/jekyll/jekyll/pull/4090
   syntax_highlighter: rouge
 
-  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
-  # span, block element options fall back to global
+  # # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  # # span, block element options fall back to global
   syntax_highlighter_opts:
     # Rouge Options › https://github.com/jneen/rouge#full-options
-    # css_class: 'highlight'
-    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    css_class: 'highlight'
+    #\line_numbers: true # bad idea, spans don't need linenos and would inherit this option
     span:
       line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+
 
 # Sass settings
 sass:

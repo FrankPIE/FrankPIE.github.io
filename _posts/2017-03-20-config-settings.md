@@ -7,6 +7,7 @@ tags:
   - howto
 hero: https://source.unsplash.com/collection/582860/
 overlay: red
+published: false
 ---
 
 All of the dactl's configurations has to be set in `_config.yml` file. Read on for explanation of all of the features that you can toggle, including configuring the layout.
@@ -17,7 +18,7 @@ I've split dactl's `_config.yml` into two parts. First part should be configured
 
 Let's go through each line in the first, configurable part:
 
-~~~yaml
+``` yaml
 # Base blog settings
 blog:
   title                      : dactl
@@ -54,9 +55,9 @@ author:
 baseurl                      : "/dactl/" # the subpath of your site, e.g. /blog/, set to '' in case of hosting on GitHub pages
                                   # i.e. `http://<username>.github.io`
 url                          : "" # the base hostname & protocol for your site
-~~~
-
+```
 ## Base blog settings
+
 * `title` - title of your blog, both in `<title>` tag and in the header.
 * `description` - descriptionof your blog, shown in the footer
 
