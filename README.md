@@ -25,7 +25,6 @@ Jekyll-specific features:
 * SEO optimized
 * [Google Analytics](https://www.google.com/analytics/) support
 * [Disqus](https://disqus.com/) comments support
-* Syntax highlighter using [Rouge](https://github.com/jneen/rouge) with numbered code lines
 
 Other features:
 
