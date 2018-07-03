@@ -8,7 +8,7 @@ tags:
     - 图形图像
     - 效率工具
 hero: /hero/ImageMagick_logo.png
-overlay: white
+overlay: pink
 published: true
 ---
 
