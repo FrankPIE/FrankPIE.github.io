@@ -36,6 +36,7 @@ author:
   stackoverflow             : users/4806840/frankpie
   disqus                    : madstrawberry-space-1 # your disqus site name
   google_analytics          : # 'UA-XXXXXXXX-X'
+  baidu_analytics           : true
   photo                     : "uploads/me.jpg"
   photo2x                   : "uploads/me.jpg"
 
