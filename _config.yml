@@ -35,8 +35,8 @@ author:
   youtube                   : 
   stackoverflow             : users/4806840/frankpie
   disqus                    : madstrawberry-space-1 # your disqus site name
-  google_analytics          : # 'UA-XXXXXXXX-X'
-  baidu_analytics           : true
+  google_analytics          : 'UA-122298590-1'
+  baidu_analytics           : c687ed00ef7ec1e6647e872ee566c745
   photo                     : "uploads/me.jpg"
   photo2x                   : "uploads/me.jpg"
 
