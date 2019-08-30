@@ -9,6 +9,8 @@ url: http://FrankPIE.github.io
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: ''
 
+showproject: true
+
 author: MadStrawberry
 copyright: 2015-2019
 
