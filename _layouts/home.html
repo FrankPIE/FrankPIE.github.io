@@ -3,6 +3,7 @@ layout: page
 ---
 
 {% for post in site.posts limit:10 %}
+{% if post.published %}
 <h2 class="post-title">
     <a href="{{ post.url | relative_url }}">
         {{ post.title }}
@@ -26,6 +27,7 @@ layout: page
         {{ post.description }}
     </p>
 </div>
+{% endif %}
 {% endfor %}
 
 
