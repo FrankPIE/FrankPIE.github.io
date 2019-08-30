@@ -8,14 +8,38 @@
 </div>
 
 <div class="sidebar">
+  <script type="text/javascript">
+     window.onload = function() {
+        try {
+          TagCanvas.Start('TagCloudCanvas','tags',{
+            textColour: '#3ca2a2',
+            outlineColour: '#3ca2a2',
+            reverse: true,
+            depth: 0.8,
+            maxSpeed: 0.05
+          });
+        } catch(e) {
+          // something went wrong, hide the canvas container
+          document.getElementById('CanvasContainer').style.display = 'none';
+        }
+      };
+  </script>
   <h2>标签</h2>
-  <ul class="sideBarTags">
+  <div id="CanvasContainer">
+    <canvas width="300" height="300" id="TagCloudCanvas">
+      <p>Anything in here will be replaced on browsers that support the canvas element</p>
+    </canvas>
+  </div>
+  <div id="tags">
     {% assign tags = (site.tags | sort:0) %}
-    {% for tag in tags %}
-    <li>
-      <a href="{{ '/tag/' | append: tag[0] | relative_url }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}">
-        <span>{{tag[0] }}</span></a>
-    </li>
-    {% endfor %}
+    <ul>
+      {% for tag in tags %}
+      <li>
+        <a href="{{ '/tag/' | append: tag[0] | relative_url }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}">{{tag[0] }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <ul class="sideBarTags">
   </ul>
 </div>
