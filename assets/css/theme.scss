@@ -335,6 +335,22 @@ table.inner-borders {
 }
 
 //********************************************************
+//                    pageination
+//********************************************************
+.pagination {
+  margin-left: 40%;
+}
+
+.pagination-item-prev{
+  font-size: larger;
+}
+
+.pagination-item-next {
+  font-size: larger;
+  margin-left: 40px;
+}
+
+//********************************************************
 //                    Footer
 //********************************************************
 .footer {

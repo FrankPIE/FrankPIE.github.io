@@ -26,10 +26,17 @@ social:
   github: FrankPIE
   stackoverflow: '4806840'
   zhihu: 'madstrawberry'
-  linkedin:
+  linkedin: 'peibx'
   instagram: 
   lastfm: 
   rss: feed.xml
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate                     : 7
+paginate_path                : 'page:num'
 
 # Google Analytics key, leave blank to ignore
 google_analytics_key:

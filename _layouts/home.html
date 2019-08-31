@@ -2,7 +2,7 @@
 layout: page
 ---
 
-{% for post in site.posts limit:10 %}
+{% for post in paginator.posts %}
 {% if post.published %}
 <h2 class="post-title">
     <a href="{{ post.url | relative_url }}">
@@ -30,9 +30,10 @@ layout: page
 {% endif %}
 {% endfor %}
 
+{% include pagination.html %}
 
-<div class="post-footer">
+<!-- <div class="post-footer">
     <div class="column-full">
         <h3><a href="{{ 'archive' | relative_url }}">所有文章</a></h3>
     </div>
-</div>
+</div> -->
