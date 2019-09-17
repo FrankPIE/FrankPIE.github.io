@@ -43,7 +43,7 @@ google_analytics_key:
 # Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
 yandex_metrica:
 # Baidu Analytics key, leave blank to ignore
-baidu_analytics_key: c687ed00ef7ec1e6647e872ee566c745
+baidu_analytics_key: 'c687ed00ef7ec1e6647e872ee566c745'
 
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
